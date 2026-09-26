@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Mullvad Helper
+GenericName=VPN Client
+Comment=Connect to Mullvad VPN with one click
+Exec=mullvad-helper
+Icon=mullvad-helper
+Terminal=false
+Categories=Network;Security;
+Keywords=vpn;wireguard;mullvad;privacy;
+StartupWMClass=io.github.mullvadhelper.MullvadHelper
+StartupNotify=true
+SingleMainWindow=true

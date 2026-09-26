@@ -1,0 +1,22 @@
+[package]
+name = "mullvad-helper-backend"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Mullvad Helper backend: WireGuard, DNS, systemd, privilege, deps, netcheck, doctor"
+
+[dependencies]
+mullvad-helper-core.workspace = true
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+regex.workspace = true
+chrono.workspace = true
+tracing.workspace = true
+reqwest.workspace = true
+async-trait.workspace = true
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full", "test-util"] }

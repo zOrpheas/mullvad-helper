@@ -1,0 +1,21 @@
+[package]
+name = "mullvad-helper-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Mullvad Helper CLI fallback"
+default-run = "mullvad-helper-cli"
+
+[dependencies]
+mullvad-helper-core.workspace = true
+mullvad-helper-backend.workspace = true
+tokio.workspace = true
+clap.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+serde_json.workspace = true
+
+[[bin]]
+name = "mullvad-helper-cli"
+path = "src/main.rs"

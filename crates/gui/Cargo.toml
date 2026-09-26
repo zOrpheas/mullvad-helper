@@ -1,0 +1,27 @@
+[package]
+name = "mullvad-helper-gui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Mullvad Helper GTK4/libadwaita GUI"
+default-run = "mullvad-helper"
+
+[dependencies]
+mullvad-helper-core.workspace = true
+mullvad-helper-backend.workspace = true
+tokio.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+async-channel = "2"
+gtk4 = "=0.9.7"
+libadwaita = { version = "=0.7.2", features = ["v1_5"] }
+glib = "=0.20.12"
+gio = "=0.20.12"
+ksni = { version = "0.3", features = ["blocking"] }
+
+[[bin]]
+name = "mullvad-helper"
+path = "src/main.rs"

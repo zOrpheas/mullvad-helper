@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policyconfig>
+  <vendor>Mullvad Helper</vendor>
+  <vendor_url>https://github.com/example/mullvad-helper</vendor_url>
+  <action id="io.github.mullvadhelper.privileged">
+    <description>Manage WireGuard tunnels</description>
+    <message>Authentication is required to manage WireGuard tunnels</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/mullvad-helper-privileged</annotate>
+  </action>
+</policyconfig>

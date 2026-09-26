@@ -1,0 +1,15 @@
+[package]
+name = "mullvad-helper-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Mullvad Helper core: WireGuard config parser, redaction, logging, shared models"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+regex.workspace = true
+chrono.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

@@ -1,0 +1,18 @@
+[package]
+name = "mullvad-helper-privileged"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Mullvad Helper minimal privileged helper (run via pkexec/polkit)"
+
+[dependencies]
+anyhow.workspace = true
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[[bin]]
+name = "mullvad-helper-privileged"
+path = "src/main.rs"
