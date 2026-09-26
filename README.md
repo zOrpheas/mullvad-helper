@@ -133,6 +133,9 @@ cargo test --workspace     # no VPN or root needed
 ./target/release/mullvad-helper
 ```
 
+# Preview
+![mullvad-helper](Preview.png)
+
 ## License
 
 GPL-3.0-or-later. See [LICENSE](LICENSE).
